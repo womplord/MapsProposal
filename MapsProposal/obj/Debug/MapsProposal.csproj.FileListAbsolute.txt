@@ -38,3 +38,7 @@ c:\users\jeremy.bennett\documents\visual studio 2015\Projects\MapsProposal\MapsP
 c:\users\jeremy.bennett\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Debug\MapsProposal.csprojResolveAssemblyReference.cache
 c:\users\jeremy.bennett\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Debug\MapsProposal.dll
 c:\users\jeremy.bennett\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Debug\MapsProposal.pdb
+C:\Users\jeremy.bennett\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\bin\EntityFramework.dll
+C:\Users\jeremy.bennett\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\bin\EntityFramework.SqlServer.dll
+C:\Users\jeremy.bennett\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\bin\EntityFramework.xml
+C:\Users\jeremy.bennett\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\bin\EntityFramework.SqlServer.xml
