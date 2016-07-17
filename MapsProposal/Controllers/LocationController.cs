@@ -47,15 +47,21 @@ namespace MapsProposal.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Latitude,Longitude,Name")] Location location)
+        public ActionResult Create([Bind(Include = "Latitude,Longitude,Name")] Location location)
         {
-            if (ModelState.IsValid)
+            try
             {
-                db.Locations.Add(location);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    db.Locations.Add(location);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
             }
-
+            catch (DataException)
+            {
+                ModelState.AddModelError("", "Unable to save changes");
+            }
             return View(location);
         }
 

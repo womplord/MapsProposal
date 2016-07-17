@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<MapsProposal.Models.Location>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Browse Saved Locations";
 }
 
 <h2>Index</h2>
@@ -26,17 +26,17 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Latitude)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Longitude)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+        @*    @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |*@
+            @Html.ActionLink("View", "Details", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
     </tr>

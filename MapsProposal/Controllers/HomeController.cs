@@ -26,5 +26,10 @@ namespace MapsProposal.Controllers
 
             return View();
         }
+
+        public ActionResult Location()
+        {
+            return View();
+        }
     }
 }
