@@ -18,7 +18,10 @@ namespace MapsProposal.Controllers
         // GET: Location
         public ActionResult Index()
         {
+
             return View(db.Locations.ToList());
+
+
         }
 
         // GET: Location/Details/5

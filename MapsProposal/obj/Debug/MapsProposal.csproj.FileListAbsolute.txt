@@ -86,3 +86,6 @@ C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\
 C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\obj\Debug\MapsProposal.csprojResolveAssemblyReference.cache
 C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\obj\Debug\MapsProposal.dll
 C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\obj\Debug\MapsProposal.pdb
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\obj\Debug\MapsProposal.Migrations.InitialCreate.resources
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\obj\Debug\MapsProposal.csproj.GenerateResource.Cache
+C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\obj\Debug\MapsProposal.Migrations.Initial.resources

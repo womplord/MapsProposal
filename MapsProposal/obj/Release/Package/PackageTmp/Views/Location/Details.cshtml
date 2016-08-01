@@ -1,0 +1,55 @@
+﻿@model MapsProposal.Models.Location
+
+@{
+    ViewBag.Title = Model.Name;
+}
+
+<div id="map"></div>
+<div id="save">
+    <table>
+        <tr>
+            <td id="latlabel" style="height: 40px">&nbsp;Latitude&nbsp;</td>
+            <td id="lat">@Model.Latitude</td>
+            <td id="lnglabel">&nbsp;Longitude&nbsp;</td>
+            <td id="lng">@Model.Longitude</td>
+
+        </tr>
+    </table>
+</div>
+@*
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    </p>
+*@
+<script>
+
+      //declare map and marker objects
+      var map;
+      var marker;
+
+      //get the coordinates of the marker
+      function getCoordinates() {
+        var coords = marker.getPosition()
+        alert(coords)
+
+      }
+
+
+
+      function initMap() {
+          infoWindow = new google.maps.InfoWindow();
+          map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: @Model.Latitude, lng: @Model.Longitude},
+              zoom: 13,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          });
+
+          marker = new google.maps.Marker({
+              position: {lat: @Model.Latitude, lng: @Model.Longitude},
+              map: map
+          });
+      }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHH2xW97a6O5sf8XvXxfxyBQet31lmlLQ&libraries=places&callback=initMap"
+        async defer></script>
+

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MapsProposalContext-Web.config Connection String" description="MapsProposalContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;Initial Catalog=MapsProposal2;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\MapsProposal1.mdf" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jeremy\\Documents\\Visual\ Studio\ 2015\\Projects\\MapsProposal\\MapsProposal\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MapsProposalContext']/@connectionString" />
+  </parameter>
+  <parameter name="MapsProposalContext_DatabasePublish-Web.config Connection String" description="MapsProposalContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="MapsProposalContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jeremy\\Documents\\Visual\ Studio\ 2015\\Projects\\MapsProposal\\MapsProposal\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MapsProposalContext_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>

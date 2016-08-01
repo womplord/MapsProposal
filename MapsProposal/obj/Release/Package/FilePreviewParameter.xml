@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="MapsProposalTest" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Jeremy\\Documents\\Visual\ Studio\ 2015\\Projects\\MapsProposal\\MapsProposal\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Jeremy\\Documents\\Visual\ Studio\ 2015\\Projects\\MapsProposal\\MapsProposal\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="MapsProposalContext-Web.config Connection String" description="" value="Data Source=tcp:e4i270evp0.database.windows.net,1433;Initial Catalog=MapsProAeLC6OpfE;User Id=Jeremy.Bennett@e4i270evp0;Password=Jry748bnt" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jeremy\\Documents\\Visual\ Studio\ 2015\\Projects\\MapsProposal\\MapsProposal\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MapsProposalContext']/@connectionString" />
+  </parameter>
+</parameters>

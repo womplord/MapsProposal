@@ -8,8 +8,10 @@
 <div id="save">
     <table>
         <tr>
-            <td style="width: 200px">Lat: @Model.Latitude</td>
-            <td style="width: 200px">Long: @Model.Longitude</td>
+            <td id="latlabel" style="height: 40px">&nbsp;Latitude&nbsp;</td>
+            <td id="lat">@Model.Latitude</td>
+            <td id="lnglabel">&nbsp;Longitude&nbsp;</td>
+            <td id="lng">@Model.Longitude</td>
 
         </tr>
     </table>
@@ -46,7 +48,10 @@
               position: {lat: @Model.Latitude, lng: @Model.Longitude},
               map: map
           });
+
       }
+
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHH2xW97a6O5sf8XvXxfxyBQet31lmlLQ&libraries=places&callback=initMap"
         async defer></script>
