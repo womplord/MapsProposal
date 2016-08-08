@@ -4,7 +4,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>@ViewBag.Title - Maps Proposal</title>
-
+    <script src="~/Scripts/jquery-3.1.0.min.js"></script>
     <style>
         html, body {
             height: 100%;
@@ -12,6 +12,27 @@
             padding: 0;
             font-size: 13px;
         }
+
+        /*
+        #checkboxesForm td {
+            margin: 0;
+            padding: 0;
+        }
+
+        #checkboxesForm th {
+            border-right: 1px solid black;
+            padding: 0;
+            margin: 0;
+        }
+
+        #checkboxesForm .groupend {
+            border-right: 1px solid black;
+        }
+        #checkboxesForm tr {
+            margin: 0;
+            padding: 0;
+        }
+            */
 
         #map {
             height: calc(100% - 180px);
@@ -110,14 +131,14 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-        #lat, #lng {
+        #position, #positionNE, #positionSW,#areaText {
             background-color: white;
-            width: 200px;
+            width: 150px;
             height: 10px;
             padding: 2px;
 
         }
-        #latlabel,#lnglabel {
+        #positionLabel,#positionNELabel,#positionSWLabel,#areaLabel {
             font-family: Impact;
             font-size: 17px;
             color:white;
@@ -162,6 +183,36 @@
             padding: 0px;
             height: 20px;
             margin: 0px;
+        }
+
+        .monitoringProperties tr td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .formNoMap {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .formNoMap h2 {
+            font-family: Roboto;
+        }
+
+        .form-element {
+            padding-right: 20px;
+            font-size: 15px;
+        }
+
+        .form-element label {
+            text-decoration: solid;
+        }
+
+        .indexTable tr td {
+            padding-top: 1px;
+            padding-right: 3px;
+            padding-bottom: 1px;
+            text-align: center;
         }
         
 

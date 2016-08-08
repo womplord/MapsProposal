@@ -42,6 +42,9 @@ C:\Users\Jeremy\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\
 C:\Users\Jeremy\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.csprojResolveAssemblyReference.cache
 C:\Users\Jeremy\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.dll
 C:\Users\Jeremy\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.pdb
-C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.Migrations.InitialCreate.resources
-C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.Migrations.Initial.resources
 C:\Users\Jeremy\Documents\Visual Studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.csproj.GenerateResource.Cache
+C:\Users\Jeremy\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.Migrations.rectangle.resources
+C:\Users\Jeremy\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.Migrations.optional.resources
+C:\Users\Jeremy\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.Migrations.defaultvalues.resources
+C:\Users\Jeremy\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.Migrations.defaultvalues2.resources
+C:\Users\Jeremy\documents\visual studio 2015\Projects\MapsProposal\MapsProposal\obj\Release\MapsProposal.Migrations.area.resources

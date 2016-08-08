@@ -19,8 +19,8 @@ namespace MapsProposal.Migrations
         {
             var locations = new List<Location>
             {
-                new Location { Name = "Skull Island",Latitude = 30,Longitude = 25},
-                new Location { Name = "Atlantis",    Latitude = 35,   Longitude = 45}
+                new Location { Name = "Skull Island",Latitude = 30,Longitude = 25,VegetationCover=true},
+                new Location { Name = "Atlantis",    Latitude = 35,Longitude = 45,VegetationCover=false}
             };
             locations.ForEach(l => context.Locations.AddOrUpdate(p => p.Name, l));
             context.SaveChanges();

@@ -135,13 +135,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607241522186_InitialCreate.cs" />
-    <Compile Include="Migrations\201607241522186_InitialCreate.Designer.cs">
-      <DependentUpon>201607241522186_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201608061708090_rectangle.cs" />
+    <Compile Include="Migrations\201608061708090_rectangle.Designer.cs">
+      <DependentUpon>201608061708090_rectangle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607241539452_Initial.cs" />
-    <Compile Include="Migrations\201607241539452_Initial.Designer.cs">
-      <DependentUpon>201607241539452_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201608061853348_optional.cs" />
+    <Compile Include="Migrations\201608061853348_optional.Designer.cs">
+      <DependentUpon>201608061853348_optional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608070756324_defaultvalues.cs" />
+    <Compile Include="Migrations\201608070756324_defaultvalues.Designer.cs">
+      <DependentUpon>201608070756324_defaultvalues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608070758027_defaultvalues2.cs" />
+    <Compile Include="Migrations\201608070758027_defaultvalues2.Designer.cs">
+      <DependentUpon>201608070758027_defaultvalues2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608081926554_area.cs" />
+    <Compile Include="Migrations\201608081926554_area.Designer.cs">
+      <DependentUpon>201608081926554_area.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Location.cs" />
@@ -163,9 +175,13 @@
     <None Include="Properties\PublishProfiles\MapsProposalTest - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\MapsProposalTest - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\MapsProposalTest - Web Deploy.pubxml" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery-3.1.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.0.js" />
+    <Content Include="Scripts\jquery-3.1.0.min.js" />
+    <Content Include="Scripts\jquery-3.1.0.slim.js" />
+    <Content Include="Scripts\jquery-3.1.0.slim.min.js" />
+    <Content Include="Scripts\jquery-3.1.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.0.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -196,6 +212,7 @@
     <Content Include="Views\Location\Details.cshtml" />
     <Content Include="Views\Location\Edit.cshtml" />
     <Content Include="Views\Location\Index.cshtml" />
+    <Content Include="Views\Location\Monitor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -206,14 +223,22 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201607241522186_InitialCreate.resx">
-      <DependentUpon>201607241522186_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201608061708090_rectangle.resx">
+      <DependentUpon>201608061708090_rectangle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607241539452_Initial.resx">
-      <DependentUpon>201607241539452_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201608061853348_optional.resx">
+      <DependentUpon>201608061853348_optional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608070756324_defaultvalues.resx">
+      <DependentUpon>201608070756324_defaultvalues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608070758027_defaultvalues2.resx">
+      <DependentUpon>201608070758027_defaultvalues2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608081926554_area.resx">
+      <DependentUpon>201608081926554_area.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

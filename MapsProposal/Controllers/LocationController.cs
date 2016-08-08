@@ -50,7 +50,7 @@ namespace MapsProposal.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Latitude,Longitude,Name")] Location location)
+        public ActionResult Create([Bind(Include = "Latitude,Longitude,Name,LocationType,NorthEastLatitude,NorthEastLongitude,SouthWestLatitude,SouthWestLongitude,VegetationCover,LandUse,Forestry,SocialInfrastructure,SettlementSize,Water,Area,Height,RectangleArea")] Location location)
         {
             try
             {
@@ -58,8 +58,9 @@ namespace MapsProposal.Controllers
                 {
                     db.Locations.Add(location);
                     db.SaveChanges();
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Monitor", new { id = location.ID });
                 }
+                var errors = ModelState.Values.SelectMany(v => v.Errors);
             }
             catch (DataException)
             {
@@ -83,20 +84,76 @@ namespace MapsProposal.Controllers
             return View(location);
         }
 
-        // POST: Location/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+
+        [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Latitude,Longitude,Name")] Location location)
+        public ActionResult EditLocation(int? id)
         {
-            if (ModelState.IsValid)
+            if (id == null)
             {
-                db.Entry(location).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var locationToUpdate = db.Locations.Find(id);
+            if (TryUpdateModel(locationToUpdate, "",
+            new string[] { "VegetationCover", "LandUse", "Forestry", "Influx", "SocialInfrastructure", "SettlementSize", "Water", "Area", "Height" }))
+            {
+                try
+                {
+                    db.SaveChanges();
+
+                    return RedirectToAction("Index");
+                }
+                catch (DataException /* dex */)
+                {
+                    //Log the error (uncomment dex variable name and add a line here to write a log.
+                    ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
+                }
+            }
+            return View(locationToUpdate);
+        }
+
+
+        // GET: Location/Edit/5
+        public ActionResult Monitor(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Location location = db.Locations.Find(id);
+            if (location == null)
+            {
+                return HttpNotFound();
             }
             return View(location);
+        }
+
+
+        [HttpPost, ActionName("Monitor")]
+        [ValidateAntiForgeryToken]
+        public ActionResult MonitorLocation(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var locationToUpdate = db.Locations.Find(id);
+            if (TryUpdateModel(locationToUpdate, "",
+            new string[] { "VegetationCover", "LandUse", "Forestry", "Influx", "SocialInfrastructure", "SettlementSize", "Water", "Area", "Height" }))
+            {
+                try
+                {
+                    db.SaveChanges();
+
+                    return RedirectToAction("Index");
+                }
+                catch (DataException /* dex */)
+                {
+                    //Log the error (uncomment dex variable name and add a line here to write a log.
+                    ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
+                }
+            }
+            return View(locationToUpdate);
         }
 
         // GET: Location/Delete/5
